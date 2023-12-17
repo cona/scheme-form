@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/cona/scheme-form/",
+  "homepage": "https://cona.github.io/scheme-form/",
   "dependencies": {
     "@apideck/better-ajv-errors": "^0.3.6",
     "@rjsf/core": "^5.15.1",
@@ -23,12 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && npm run rm && npm run mv" ,
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "rm": "rm -rf docs",
-    "mv": "mv build docs",
-    "deploy": "npm run rm && npm run build && npm run mv"
+    "mv": "mv build docs"
   },
   "eslintConfig": {
     "extends": [
